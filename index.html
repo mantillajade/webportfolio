@@ -117,36 +117,80 @@
 
 	<!-- Tools -->
 	<section id="tools" class="container text-center">
-	        <h2 class="mb-4">My Tools & Technologies</h2>
-	        <div id="toolsCarousel" class="carousel slide" data-bs-ride="carousel">
-	            <div class="carousel-inner">
-	                <div class="carousel-item active" style="background-image: url('images/bgfrontend.png');">
-	                    <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Programming Languages</a></h4>
-	                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>, <a href="https://www.python.org/" target="_blank">Python</a></p>
-	                </div>
-	                <div class="carousel-item" style="background-image: url('images/bgprog.png');">
-	                    <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Front-End Technologies</a></h4>
-	                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>, <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://react.dev/" target="_blank">React</a></p>
-	                </div>
-	                <div class="carousel-item" style="background-image: url('images/bgbackend.png');">
-	                    <h4><a href="https://nodejs.org/" target="_blank">Back-End Technologies</a></h4>
-	                    <p><a href="https://nodejs.org/" target="_blank">Node.js</a>, <a href="https://expressjs.com/" target="_blank">Express</a>, <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></p>
-	                </div>
-	                <div class="carousel-item" style="background-image: url('images/bggit.png');">
-	                    <h4><a href="https://git-scm.com/" target="_blank">Version Control & Deployment</a></h4>
-	                    <p><a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="https://www.netlify.com/" target="_blank">Netlify</a></p>
-	                </div>
-	            </div>
-	            <button class="carousel-control-prev" type="button" data-bs-target="#toolsCarousel" data-bs-slide="prev">
-	                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	                <span class="visually-hidden">Previous</span>
-	            </button>
-	            <button class="carousel-control-next" type="button" data-bs-target="#toolsCarousel" data-bs-slide="next">
-	                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	                <span class="visually-hidden">Next</span>
-	            </button>
-	        </div>
-	    </section>
+    <h2 class="mb-4">My Tools & Technologies</h2>
+    
+    <div id="toolsCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#toolsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#toolsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#toolsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#toolsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Programming Languages -->
+            <div class="carousel-item active" id="programming">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="text-white bg-dark bg-opacity-50 p-4 rounded">
+                        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-white text-decoration-none">Programming Languages</a></h4>
+                        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-white text-decoration-none">JavaScript</a>, 
+                           <a href="https://www.python.org/" target="_blank" class="text-white text-decoration-none">Python</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Front-End Technologies -->
+            <div class="carousel-item" id="frontend">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="text-white bg-dark bg-opacity-50 p-4 rounded">
+                        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-white text-decoration-none">Front-End Technologies</a></h4>
+                        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-white text-decoration-none">HTML</a>, 
+                           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="text-white text-decoration-none">CSS</a>, 
+                           <a href="https://getbootstrap.com/" target="_blank" class="text-white text-decoration-none">Bootstrap</a>, 
+                           <a href="https://react.dev/" target="_blank" class="text-white text-decoration-none">React</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back-End Technologies -->
+            <div class="carousel-item" id="backend">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="text-white bg-dark bg-opacity-50 p-4 rounded">
+                        <h4><a href="https://nodejs.org/" target="_blank" class="text-white text-decoration-none">Back-End Technologies</a></h4>
+                        <p><a href="https://nodejs.org/" target="_blank" class="text-white text-decoration-none">Node.js</a>, 
+                           <a href="https://expressjs.com/" target="_blank" class="text-white text-decoration-none">Express</a>, 
+                           <a href="https://www.mongodb.com/" target="_blank" class="text-white text-decoration-none">MongoDB</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version Control & Deployment -->
+            <div class="carousel-item" id="version-control">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="text-white bg-dark bg-opacity-50 p-4 rounded">
+                        <h4><a href="https://git-scm.com/" target="_blank" class="text-white text-decoration-none">Version Control & Deployment</a></h4>
+                        <p><a href="https://git-scm.com/" target="_blank" class="text-white text-decoration-none">Git</a>, 
+                           <a href="https://github.com/" target="_blank" class="text-white text-decoration-none">GitHub</a>, 
+                           <a href="https://www.netlify.com/" target="_blank" class="text-white text-decoration-none">Netlify</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#toolsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#toolsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</section>
 	<section id="contact" class="contact-section py-5">
 	    <div class="container">
 	    	<div id="map" class="row my-3">
@@ -154,7 +198,6 @@
 	    			<iframe 
 	    			width="100%" 
 	    			height="300" 
-	    			style="border:0;" 
 	    			loading="lazy" 
 	    			allowfullscreen 
 	    			referrerpolicy="no-referrer-when-downgrade" 

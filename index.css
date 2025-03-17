@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #e0e0ff, #f5f5ff);
+    background: linear-gradient(to right, #e0e0ff, #f5f5ff);    
     color: #3d03e1;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -68,19 +68,55 @@ h1, p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 300px;
 }
+
+/* Individual backgrounds must come AFTER the general rule */
+#programming {
+    background-image: url('images/bgfrontend.png') !important;
+}
+#frontend {
+    background-image: url('images/bgprog.png') !important;
+}
+#backend {
+    background-image: url('images/bgbackend.png') !important;
+}
+#version-control {
+    background-image: url('images/bggit.png') !important;
+    background-size: cover !important;
+    min-height: 300px;
+}
+
+/* Carousel controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+    filter: invert(20%) !important;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: invert(50%);
+}
+
+/* Text inside carousel */
 .carousel-item h4, .carousel-item p {
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 10px;
 }
+
+/* Contact section styling */
 .contact-section .form-control {
     border-radius: 5px;
 }
 
 .contact-section .btn {
     border-radius: 5px;
+}
+
+iframe {
+    border: 0;
 }
