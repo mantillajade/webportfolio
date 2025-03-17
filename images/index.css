@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to right, #e0e0ff, #f5f5ff);
+    color: #3d03e1;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background-color: #3d03e1;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.navbar-nav .nav-item {
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+.btn-custom {
+    font-size: 1.2em;
+    background-color: #3d03e1;
+    color: white;
+}
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+h1, p {
+    color: #3aa6b9; /* Blue-green shade for better contrast */
+    font-size: 1.75em;
+    font-weight: 700;
+}
+#landing {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+    url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+    color: white;
+}
+#projects {
+    padding: 50px 0;
+    background-color: #f5f5ff;
+}
+.project-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #d0e0ff; /* Closer to blue */
+}
+.project-card .card-title {
+    font-size: 1.1em; /* Smaller font size */
+}
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+    }
+} 
+#tools {
+    padding: 50px 0;
+    background-color: #fff;
+}
+.carousel-item {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-item h4, .carousel-item p {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-section .form-control {
+    border-radius: 5px;
+}
+
+.contact-section .btn {
+    border-radius: 5px;
+}
